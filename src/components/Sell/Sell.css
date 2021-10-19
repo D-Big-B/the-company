@@ -1,0 +1,75 @@
+.sell__container {
+  width: 100%;
+  display: flex;
+}
+.sell__container__image {
+  padding: 5rem 0;
+  width: 35%;
+  position: absolute;
+  bottom: 10%;
+}
+.sell__image {
+  width: 100%;
+  filter: opacity(0.25);
+}
+.sell__container__text {
+  z-index: 3;
+  margin: 2% 2% 2% 2%;
+  width: 100%;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-around;
+}
+.sell__container__text form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+td {
+  padding: 0rem 0rem 1rem 0rem;
+}
+.sell__form__label {
+  font-size: 1rem;
+  color: #222;
+  font-weight: 600;
+}
+.sell__form__input {
+  margin: 0.4rem 1rem;
+  width: 28ch;
+  padding: 2px 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.sell__form__select {
+  margin: 0.4rem 1rem;
+  width: 30ch;
+  padding: 2px 8px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1.1rem;
+  outline: none;
+  color: #777;
+}
+input[type="file"] {
+  display: none;
+}
+
+.sell__form__file {
+  border: none;
+  background-color: royalblue;
+  padding: 6px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  margin: 0rem 1rem;
+}
+.sell__form__owner h1,
+.sell__form__vehicle h1 {
+  color: #2f80ed;
+  margin-bottom: 2rem;
+}

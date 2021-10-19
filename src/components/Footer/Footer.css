@@ -1,0 +1,27 @@
+.footer {
+  background-color: #001529d8;
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  color: aliceblue;
+  width: 100%;
+}
+.footer__logo__container {
+  font-size: 1rem;
+  flex: 2;
+}
+.footer__logo__container h1 {
+  color: aliceblue;
+}
+.social-links {
+  flex: 1;
+}
+.social-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.social-links ul li a {
+  text-decoration: none;
+  color: aliceblue;
+}
