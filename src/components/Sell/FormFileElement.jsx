@@ -1,8 +1,6 @@
 import React from "react";
-import { Input } from "@mui/material";
-import Button from "@mui/material/Button";
 
-export default function InputFile({ label }) {
+export default function FormFileElement({ label }) {
   return (
     <tr>
       <td>

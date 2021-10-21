@@ -1,8 +1,8 @@
 import React from "react";
-import environmentImage from "./../../images/environment.svg";
-import InputSelect from "./InputSelect";
-import InputText from "./InputText";
-import InputFile from "./InputFile";
+import environmentImage from "./../../assets/images/environment.svg";
+import FormSelectElement from "./FormSelectElement";
+import FormTextElement from "./FormTextElement";
+import FormFileElement from "./FormFileElement";
 
 import "./Sell.css";
 export default function Sell() {
@@ -16,12 +16,12 @@ export default function Sell() {
           <h1>Owner's Section</h1>
           <form action="">
             <table>
-              <InputText label="Name" />
-              <InputSelect label="State" />
-              <InputText label="City" />
-              <InputText label="Contact Number" />
-              <InputText label="Email" type="email" />
-              <InputFile label="Aadhar Card" />
+              <FormTextElement label="Name" />
+              <FormSelectElement label="State" />
+              <FormTextElement label="City" />
+              <FormTextElement label="Contact Number" />
+              <FormTextElement label="Email" type="email" />
+              <FormFileElement label="Aadhar Card" />
             </table>
           </form>
         </div>
@@ -30,11 +30,11 @@ export default function Sell() {
           <h1>Vehicle's Section</h1>
           <form action="">
             <table>
-              <InputFile label="Image" />
-              <InputText label="Year" />
-              <InputSelect label="Make" />
-              <InputText label="Model" />
-              <InputFile label="RC" />
+              <FormFileElement label="Image" />
+              <FormTextElement label="Year" />
+              <FormSelectElement label="Make" />
+              <FormTextElement label="Model" />
+              <FormFileElement label="RC" />
             </table>
           </form>
         </div>

@@ -10,12 +10,12 @@ import Register from "./components/Register/Register";
 
 function App() {
   return (
-    <div className="app">
-      <div className="navbar">
+    <div className="App">
+      <div className="App__navbar">
         <Navbar />
       </div>
-      <div className="main">
-        <div className="routes">
+      <div className="App__main">
+        <div>
           <Switch>
             <Route exact path="/">
               <Home />
@@ -32,7 +32,7 @@ function App() {
           </Switch>
         </div>
       </div>
-      <div className="footer">
+      <div className="app__footer">
         <Footer />
       </div>
     </div>

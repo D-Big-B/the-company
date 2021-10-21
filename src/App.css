@@ -19,38 +19,47 @@
 ::-webkit-scrollbar-thumb {
   background: #f2c94c;
 }
-.app {
+.App {
   height: auto;
   width: 100%;
   position: absolute;
-  background: #f2994a;
-  background: -webkit-linear-gradient(to right, #f2c94c, #f2994a);
-  background: linear-gradient(to right, #f2c94c, #f2994a);
+  background-image: url("./assets/images/bg.png");
+  background-size: 300px;
 }
 
-.navbar {
+.App__navbar {
   height: 8vh;
-  width: 95vw;
+  width: 90vw;
+  margin: 1rem auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: bisque;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(2.5px);
-  -webkit-backdrop-filter: blur(2.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  position: fixed;
-  left: 2.5vw;
-  border-radius: 10px;
-  padding: 10px;
-  top: 2%;
   z-index: 100;
 }
 
-.main {
+.App__main {
   height: auto;
   margin: 0 auto;
-  min-height: 100vh;
-  padding-top: 10vh;
+  min-height: 95vh;
+}
+.input__label {
+  font-size: 0.9rem;
+  color: #2064a3;
+}
+.input__div {
+  margin: 5px 0 25px 0;
+}
+.input__text {
+  width: 100%;
+  padding: 10px 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.error__label {
+  color: red;
+  font-size: 0.7rem;
+
+  position: absolute;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import homeImage from "./../../images/vehiclesSale.svg";
+import homeImage from "./../../assets/images/vehiclesSale.svg";
 
 import "./Home.css";
 

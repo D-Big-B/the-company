@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function InputSelect({ label }) {
+export default function FormSelectElement({ label }) {
   return (
     <tr>
       <td>
