@@ -1,0 +1,132 @@
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.stated hr {
+    height: 4em;
+}
+
+.contain {
+    background-color: rgba(128, 128, 128, 0.623);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    margin: 5rem auto;
+    justify-content: space-between;
+}
+
+.foot-left a,
+.foot-right a {
+    text-align: center;
+    color:black;
+    padding: 1rem;
+    margin: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+.foot-left a:hover,
+.foot-right a:hover{
+    background-color:rgba(102, 102, 102, 0.699) ;
+}
+
+.fab {
+    cursor: pointer;
+    margin: 1rem 0.7rem;
+    transition: 0.7s;
+    /* padding: 2rem; */
+}
+
+.fab:hover {
+    /* transform:scale(1.1); */
+    color: rgb(17, 105, 163);
+    transform: rotate(360deg);
+}
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.social-links a{
+    color: rgba(59, 59, 59, 0.699)
+}
+
+.endtext{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+
+@media only screen and (max-width:768px) {
+
+    .down,
+    .first-two-articles,
+    .second-two-articles {
+        flex-direction: column;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+
+    .fab {
+        margin: 0.7rem 0.5rem
+    }
+
+    .endtext h6 {
+        margin: 0rem 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 14px;
+    }
+
+    .down h4 {
+        font-size: 1em;
+
+    }
+
+    .left {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .stated hr {
+        height: 2em;
+    }
+    .footer{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+    .foot-left,.foot-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .foot-left a, .foot-right a{
+        width:100%;
+        margin: 0.7rem auto;
+        padding:0.5rem 2rem;
+    }
+    .foot-mid-logo{
+        display: none;
+    }
+}
