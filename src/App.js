@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login";
-import Sell from "./components/Sell/Sell";
+import Recycle from "./components/Recycle/Recycle";
 import Register from "./components/Register/Register";
 
 function App() {
@@ -26,13 +26,16 @@ function App() {
             <Route exact path="/register">
               <Register />
             </Route>
-            <Route exact path="/sell">
-              <Sell />
-            </Route>
+
+            {localStorage.getItem("recycleBuddy-token") && (
+              <Route exact path="/recycle">
+                <Recycle />
+              </Route>
+            )}
           </Switch>
         </div>
       </div>
-      <div className="app__footer">
+      <div className="App__footer">
         <Footer />
       </div>
     </div>

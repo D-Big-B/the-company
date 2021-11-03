@@ -5,23 +5,15 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="footer__logo__container">
-        <h1>The Company</h1>
+      <div className="footer__company">
+        <h1>RecycleBuddy</h1>
         <br />
-        All Rights Reserved © 2021
+        <p>All Rights Reserved © 2021</p>
       </div>
-      <div className="social-links">
-        <ul>
-          <li>
-            <a href="google.com">FB</a>
-          </li>
-          <li>
-            <a href="google.com">IG</a>
-          </li>
-          <li>
-            <a href="google.com">TW</a>
-          </li>
-        </ul>
+      <div className="footer__contact">
+        <p>Contact us :</p>
+        +91 9136222320
+        <br /> help@recyclebuddy.tech
       </div>
     </div>
   );

@@ -1,0 +1,80 @@
+.Services__container {
+  height: 120vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: var(--primary-color);
+}
+
+.Services__quote {
+  position: relative;
+  font-size: 2rem;
+  width: 60%;
+  margin: auto;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.Services__quote p {
+  padding: 0 4rem;
+  text-align: center;
+}
+.Services__main {
+  background-color: var(--secondary-color);
+  color: #ffffff;
+  padding: 4rem;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+.Services__main span {
+  font-size: 1.4rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+}
+.Services__main h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.Services__main__para {
+  width: 70%;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.Services__main__para p {
+  margin-top: 1rem;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 800px) {
+  .Services__quote {
+    font-size: 2rem;
+    width: 80%;
+  }
+  .Services__main__para {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 44a0px) {
+  .Services__container {
+    height: 140vh;
+  }
+  .Services__main {
+    height: 70%;
+  }
+  .Services__quote {
+    font-size: 1.5rem;
+    width: 90%;
+  }
+  .Services__quote p {
+    padding: 0 2rem;
+  }
+}

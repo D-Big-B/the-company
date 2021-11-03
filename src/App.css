@@ -1,5 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
-
+:root {
+  --primary-color: #1fbd8b;
+  --primary-dark-color: #104d39;
+  --primary-light-color: #38ca9c;
+  --secondary-color: #0f1c38;
+  --secondary-light-color: #1a3264;
+  --tertiary-color: #fffb92;
+}
 * {
   margin: 0;
   padding: 0;
@@ -12,29 +19,38 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1b6;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--primary-color);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f2c94c;
+  background: var(--tertiary-color);
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
 }
 .App {
   height: auto;
   width: 100%;
   position: absolute;
-  background-image: url("./assets/images/bg.png");
   background-size: 300px;
+  overflow-x: hidden;
 }
 
 .App__navbar {
-  height: 8vh;
-  width: 90vw;
-  margin: 1rem auto;
+  height: 10vh;
+  width: 100vw;
+  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+}
+.App__footer {
+  width: 100%;
+  position: relative;
 }
 
 .App__main {
@@ -44,10 +60,10 @@
 }
 .input__label {
   font-size: 0.9rem;
-  color: #2064a3;
+  color: var(--secondary-color);
 }
 .input__div {
-  margin: 5px 0 25px 0;
+  margin: 5px 0 10px 0;
 }
 .input__text {
   width: 100%;
@@ -55,11 +71,32 @@
   background-color: #fff;
   border-radius: 6px;
   font-size: 1rem;
+  border: none;
 }
 
 .error__label {
   color: red;
   font-size: 0.7rem;
-
   position: absolute;
+}
+
+.input__preview {
+  display: flex;
+  justify-content: space-between;
+}
+.input__file__button {
+  background-color: var(--primary-light-color);
+  padding: 8px 40px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 60px;
+  margin: 10px 0;
+  border: none;
+}
+.form__error {
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem 0;
 }
