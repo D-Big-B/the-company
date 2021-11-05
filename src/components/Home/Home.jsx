@@ -20,7 +20,7 @@ export default function Home() {
             }
           >
             <button className="Home__container__button">
-              Wanna Sell Your Scrap Vehicle
+              Wanna Recycle your vehicle
             </button>
           </Link>
         </div>
